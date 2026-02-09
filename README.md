@@ -25,3 +25,7 @@ ss -ltn | grep 55432
 
 sudo -u postgres psql -p 55432
 ALTER USER postgres PASSWORD 'sifre';
+\q (çikis yapar)
+
+database için url ayarlama
+export DATABASE_URL='postgresql://postgres:123@localhost:55432/postgres'
