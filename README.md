@@ -19,3 +19,9 @@ sudo systemctl restart postgresql
 kontrol:
 
 ss -ltn | grep 55432
+
+
+şifre ayarlama:
+
+sudo -u postgres psql -p 55432
+ALTER USER postgres PASSWORD 'sifre';
