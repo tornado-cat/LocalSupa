@@ -14,5 +14,8 @@ sudo -u postgres psql -c "show config_file;"
 port değiştirmek: (ctrl+w ile "port" aratın ve değiştirin"
 
 sudo nano /etc/postgresql/14/main/postgresql.conf
+sudo systemctl restart postgresql
 
+kontrol:
 
+ss -ltn | grep 55432
